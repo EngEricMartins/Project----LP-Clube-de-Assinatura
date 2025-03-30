@@ -91,6 +91,10 @@
     margin: auto;
   }
 
+  body {
+    background-color: var(--shape-bg);
+  }
+
 }
 
 

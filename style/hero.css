@@ -9,6 +9,8 @@
   display: flex;
   flex-direction: column;
 
+  animation: apear 5s ease;
+
   & nav {
     padding-bottom: 10.25rem;
     width: 100%;
@@ -112,5 +114,14 @@
 
       width: 4rem;
     }
+  }
+}
+
+@keyframes apear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
