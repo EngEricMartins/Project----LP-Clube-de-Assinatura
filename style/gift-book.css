@@ -1,0 +1,51 @@
+.gift-book {
+  display: flex;
+  margin-top: 6.56rem;
+  max-width: 75rem;
+  margin: auto;
+
+  border: 1px solid violet;
+  &  img {
+    max-width: 5.5rem;
+  }
+
+  img[src*='mystery-opened'] {
+    display:block;
+    margin-inline: 45%;
+
+    transform: rotate(20deg);
+
+    /* scale: 0; */
+  }
+
+  & p {
+    font: 500 var(--sb-text)/2.0 var(--ff-base);
+    color: var(--text-body);
+
+    text-align: center;
+
+    & b {
+      color: var(--blue-light);
+    }
+    
+  }
+
+  & #img-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2.12rem;
+    padding-bottom: 4.5rem;
+
+    img[src*='mystery-ouija'] {
+      transform: rotate(100deg);
+      /* scale: 0; */
+
+    }
+    img[src*='mystery-crystal'] {
+      transform: rotate(-15deg);
+      /* scale: 0; */
+
+    }
+  }
+
+}
