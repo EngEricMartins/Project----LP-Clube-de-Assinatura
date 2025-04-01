@@ -1,0 +1,90 @@
+.kit {
+  margin-top: 19.7rem;
+  border: 1px solid red;
+  max-width: inherit;
+  max-height: 100rem;
+  padding-bottom: 17.37rem;
+
+  & span {
+    font: 500 var(--body-md)/1.4 var(--ff-base);
+    color: var(--text-body);
+  }
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 2.7rem;
+
+    & h2 {
+      color: var(--text-title);
+      font: 700 var(--title-sm)/1.5 var(--ff-base);
+
+      text-shadow: 1px 1px 5px var(--text-title);
+    }
+  }
+
+  & p {
+    color:  var(--text-body);
+    font: 500 var(--body-md)/1.4 var(--ff-base);
+    text-align: center;
+    margin-top: 0.35rem;
+    margin-bottom: 5.5rem;
+  }
+
+  img[src*="book"] {
+    max-width: 29.18rem;
+    max-height: 38.56rem;
+    z-index: 1;
+
+    top: 0;
+    position: absolute;
+  }
+  img[src*="pin"] {
+    max-width: 13.87rem;
+    max-height: 15.87rem;
+    z-index: 0;
+    position: relative;
+    
+    transform: rotate(-8deg);
+
+    top: 21rem;
+    right: 5rem;
+    
+  }
+  img[src*="bookmark-yellow"] {
+    max-width: 10.75rem;
+    max-height: 33.5rem;
+    z-index: 0;
+    position: relative;
+
+    transform: rotate(12deg);
+
+    left: 15rem;
+    top: -rem;
+  }
+  img[src*="bookmark-purple"] {
+    max-width: 10.75em;
+    max-height: 33.5rem;
+    z-index: -1;
+    position: relative;
+
+    transform: rotate(22deg);
+
+    top: 6rem;
+    left: 10rem;
+  }
+  img[src*="arrow-left"] {
+    position: relative;
+    right: 31rem;
+    bottom: 14rem;
+  }
+
+  & .book-animation {
+    max-width: 80rem;
+    max-height: 55rem;
+    border: 1px solid yellow;
+    margin-inline: auto;
+    position: relative; 
+  }
+
+}

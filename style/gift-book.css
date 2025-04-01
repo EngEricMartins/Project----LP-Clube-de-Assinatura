@@ -1,7 +1,9 @@
 .gift-book {
   display: flex;
   margin-top: 6.56rem;
+  padding-inline: 2rem;
   max-width: 75rem;
+  max-height: 25rem;
   margin: auto;
 
   border: 1px solid violet;
@@ -9,43 +11,40 @@
     max-width: 5.5rem;
   }
 
+  & b {
+    &:hover {
+      color: var(--blue-mid);
+      transition: color 1s ease;
+    }
+  }
+
   img[src*='mystery-opened'] {
-    display:block;
+    display:inline-block;
     margin-inline: 45%;
 
     transform: rotate(20deg);
-
-    /* scale: 0; */
   }
 
-  & p {
+  & span {
     font: 500 var(--sb-text)/2.0 var(--ff-base);
     color: var(--text-body);
-
     text-align: center;
-
-    & b {
-      color: var(--blue-light);
-    }
-    
+  }
+  img[src*='mystery-ouija'] {
+    display: inline-block;
+    margin-bottom: 4.5rem;
+    margin-left: -2%;
+    transform: rotate(100deg);
+  }
+  img[src*='mystery-crystal'] {
+    transform: rotate(-15deg);
+    /* display: inline-block; */
+    margin-left: 85.5%;
+    margin-bottom: 4.5rem;
   }
 
-  & #img-bottom {
-    display: flex;
-    justify-content: space-between;
-    padding-inline: 2.12rem;
-    padding-bottom: 4.5rem;
-
-    img[src*='mystery-ouija'] {
-      transform: rotate(100deg);
-      /* scale: 0; */
-
-    }
-    img[src*='mystery-crystal'] {
-      transform: rotate(-15deg);
-      /* scale: 0; */
-
-    }
+  &:hover {
+    animation: gift-appear 500ms ease;
   }
 
 }
